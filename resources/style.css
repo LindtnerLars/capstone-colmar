@@ -1,0 +1,312 @@
+
+body {
+    width: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+
+.mobile {
+    display: none;
+}
+
+header {
+height: 64px;
+
+}
+
+nav {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+#nav-mobile {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-left {
+    float: left;
+    display: inline-block;
+}
+#nav-left h2 {
+    display: inline-block;
+}
+
+#nav-right {
+    float: right;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 10px;
+}
+
+a {
+    color: lightblue;
+}
+
+
+#section-1 {
+    background-color:aquamarine;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.content-left {
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    width: 60%;
+}
+
+.content-right {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    width: 40%;
+}
+
+.content-right-top{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    width: 40%;
+}
+
+.content-left img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color:antiquewhite;
+    padding: 8px;
+    width: 60%;
+    
+}
+
+button a {
+
+}
+
+#card-container {
+    display: flex;
+}
+
+#text-container {
+    width: 65%;
+}
+
+
+#image-container {
+    width: 35%;
+    height: auto;
+}
+
+#image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#text-container p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#section-3 {
+    background-color: aquamarine;
+    display: block;
+}
+
+#section-3 h1 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+#info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+#information {
+    width: 30%;
+    background-color: white;
+    margin-bottom: 32px;
+}
+
+#information img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+#information p {
+    padding-left: 16px;
+}
+
+#information h3 {
+    padding-left: 16px;
+}
+
+#middle {
+    text-align: center;
+}
+
+footer {
+    border-top: 2px solid gray;
+}
+
+#copyright {
+    float: left;
+}
+
+#terms {
+    float: right;
+    display: flex;
+}
+
+#section-3-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#courses-container {
+}
+
+#courses-container h3 {
+    padding-bottom: 8px;
+    background-color: aquamarine;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+}
+
+
+@media only screen and (max-width: 600px){
+    #nav-mobile {
+        visibility: visible;
+        height: 64px;
+        background-color: white;
+    }
+
+    #nav-desktop {
+        display: none;
+    }
+
+    body {
+        width: 100vw;
+        margin: auto;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-align: center;
+    }
+
+    .content-left {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .content-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0px;
+        padding-bottom: 32px;
+        width: 100%;
+    }
+
+    .content-right-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+        padding-bottom: 32px;
+        padding-right: 0px;
+        padding-top: 32px;
+        width: 100%;
+    }
+
+    #card-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #text-container {
+        width: 100%;
+    }
+    
+    
+    #image-container {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #section-3 {
+        display: none;
+    }
+
+    #section-4 .content-right-top {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #section-2 .content-left {
+        display: none;
+    }
+
+    #card-container {
+        padding-bottom: 64px;
+    }
+
+} 
+
+@media only screen and (min-width: 600px) {
+    #section-3-mobile {
+        display: none;
+    }
+}
